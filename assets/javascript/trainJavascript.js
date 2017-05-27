@@ -43,7 +43,7 @@ database.ref().on("child_added", function(snapshot, prevChildKey){
 		var destinations_td = $("<td>").text(destinations);
 		var trainTimes_td = $("<td>").text(trainTimes);
 		var frequencies_td = $("<td>").text(frequencies);
-		var minAway_td = $("<td>").text(minAway)
+		var minAway_td = $("<td>").text(minutesAway)
 
 		var trainSchedule_tr = $("<tr>").append(trainNames_td)
 										.append(destinations_td)
