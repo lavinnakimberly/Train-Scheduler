@@ -17,7 +17,7 @@ $(document).ready(function(){
 			"trainName": trainName,
 			"destination": destination,
 			"trainTime": trainTime,
-			"frequency": frequency,
+			"frequency": frequency
 			
 		});
 	});
