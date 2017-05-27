@@ -33,10 +33,10 @@ database.ref().on("child_added", function(snapshot, prevChildKey){
 		//var minAway = moment(frequencies).format('h:mm a', / 25 roundCeiling());
 
 		var minutesLeft = moment().diff(moment(trainTimes, 'HH:mm'), "minutes");
-        var lastArrival = minutesLeft % frequency; //minutes ago
-        var minutesAway = frequency - lastArrival; //in minutes
+        var lastArrival = minutesLeft % frequencies; //minutes ago
+        var minutesAway = frequencies - lastArrival; //in minutes
         var nextTime = moment().add(minutesAway, "minutes");
-        console.log('trainTime', trainTime);
+        console.log('trainTime', trainTimes);
         console.log('nextArrival', minutesAway);
 
 		var trainNames_td = $("<td>").text(trainNames);
